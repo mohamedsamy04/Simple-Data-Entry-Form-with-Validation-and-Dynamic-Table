@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#addButton {
+    background-color: #3498db;
+    color: white;
+    margin-right: 10px;
+}
+
+button#addButton:hover {
+    background-color: #2980b9;
+}
+
+button#resetButton {
+    background-color: #95a5a6;
+    color: white;
+}
+
+button#resetButton:hover {
+    background-color: #7f8c8d;
+}
+
+.tdive {
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 16px;
+    border: none;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: #f4f6f7;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+.errorMsg {
+    display: none;
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-top: -18px; 
+    margin-bottom: 15px; 
+    padding: 8px; 
+    background-color: #fbe9e7; 
+    border-left: 4px solid #e74c3c; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; 
+}
